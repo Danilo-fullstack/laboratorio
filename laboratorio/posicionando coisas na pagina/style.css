@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    height: 200px;
+    width: 200px;
+}
+.one {
+    background-color: rgb(139, 0, 0);
+    width: 30px;
+    height: 30px;
+}
+.two {
+    background-color: rgb(21, 255, 0);
+    width: 30px;
+    height: 30px;
+}
+.cont1 {
+    background-color: aqua;
+}
+.cont2 {
+    background-color: blueviolet;
+}
+.cont3 {
+    background-color: brown;
+}
+.cont4 {
+    background-color: darkblue;
+}

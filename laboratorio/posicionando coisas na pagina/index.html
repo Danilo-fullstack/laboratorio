@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionando Coisas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cont1 {
+            position: absolute;
+            top: 0;
+            height: 100px;
+            width: 100%;
+        }
+        .cont2 {
+            position: static;
+            top: 0;
+        }
+        .cont1 div {
+            position: relative;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: red; width: 100%; position: sticky; top: 0;">
+        <div class="cont1">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+    </div>
+
+    <div class="cont2">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <div class="cont3">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <div class="cont4">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <p>Alteração</p>
+</body>
+</html>

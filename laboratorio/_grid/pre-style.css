@@ -1,0 +1,18 @@
+@charset "UTF-8";
+section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-formularios-login {
+  width: 500px;
+  height: 350px;
+  background-color: #4e5bed;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
