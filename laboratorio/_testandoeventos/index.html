@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css"></link>
+    <title>Events</title>
+</head>
+<body>
+    <div class="box" onclick="teste()">
+        <p>Div</p>
+    </div><br>
+    <input type="text" oninput="myFunction(event)">
+    <p class="event">Evento: <span id="demo"></span></p>
+
+    <script>
+        function teste() {
+            var teste = window.document.querySelector('.box')
+            teste.style.background = 'blue'
+        }
+        function myFunction(event) {
+            document.getElementById("demo").innerHTML = event.inputType;
+        }
+    </script>
+</body>
+</html>
