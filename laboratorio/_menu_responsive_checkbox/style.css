@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol, ul, li {
+    list-style: none;
+}
+input {
+    width: 50px;
+    height: 50px;
+}
+li {
+    font-size: 22pt;
+}
+/* ------ Teste ------ */
+
+#botao:checked li.li {
+    background-color: rgb(84, 40, 187);
+    width: 50px;
+    height: 50px;
+}
