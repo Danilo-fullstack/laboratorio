@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+input:checked ~ .box1 {
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes menu {
+    from {left: -100%;}
+    to {left: 0;}
+}
