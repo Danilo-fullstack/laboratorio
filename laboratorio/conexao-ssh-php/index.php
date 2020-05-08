@@ -4,11 +4,13 @@ include('./pass.php');
 $ip = '18.224.179.239';
 $port = 22;
 $user = 'root';
-//$pass = 'toortoor';
+
 $connection = ssh2_connect($ip, $port);
 ssh2_auth_password($connection, $user, $pass);
 
-$script = "mkdir danilo";
+$script = $_POST['input'];
+
+// $script = "mkdir teste";
 ssh2_exec($connection, $script);
 //var_dump ($stream);
 
@@ -20,3 +22,17 @@ ssh2_exec($connection, $script);
 //$ssh = new SSH2($ip);
 //$ssh->auth($user,$pass);
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" value="" name="input" placeholder="Digite um comando">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
