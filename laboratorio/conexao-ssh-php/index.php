@@ -8,7 +8,7 @@ $user = 'root';
 $connection = ssh2_connect($ip, $port);
 ssh2_auth_password($connection, $user, $pass);
 
-$script = $_POST['input'];
+$script = isset($_POST['input']) ? $_POST['input'] : '';
 
 // $script = "mkdir teste";
 ssh2_exec($connection, $script);
